@@ -1,0 +1,115 @@
+/* CSS Diseño Adaptable */
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 15px;
+  background: #f0f2f5;
+  color: #333;
+}
+
+/* Cabecera */
+#cabecera {
+  background-color: #5c3a8f; /* azul agradable */
+  color: white;
+  padding: 25px 15px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(147, 74, 226, 0.4);
+}
+
+/* Menú de lista */
+#lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista li {
+  padding: 12px 10px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin: 8px 10px;
+  background-color: #6a228e; /* azul medio */
+}
+
+#lista li:hover {
+  background-color: #572a9f; /* azul oscuro */
+}
+
+/* Contenedores principales */
+#principal, #adicional {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  background-color: white;
+  color: #333;
+  margin-bottom: 15px;
+  min-height: 200px;
+}
+
+/* Limpieza de floats */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media query para pantallas >= 800px (escritorio) */
+@media (min-width: 800px) {
+  #lista, #principal, #adicional {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+  #lista {
+    width: 20%;
+    background-color: #c381ed;
+    padding: 20px 10px;
+    margin-right: 20px;
+  }
+
+  #principal {
+    width: 50%;
+  }
+
+  #adicional {
+    width: 25%;
+    background-color: #f7f9fc;
+    box-shadow: none;
+    margin-right: 0;
+  }
+
+  /* Para limpiar floats y evitar problemas con contenedores */
+  body > div:nth-child(2) {
+  }
+}
+
+/* Media query para pantallas <= 650px (móviles) */
+@media (max-width: 650px) {
+  #lista, #principal, #adicional {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #lista {
+    background-color: #d8acfa;
+    padding: 10px 0;
+  }
+
+  #lista li {
+    margin: 6px 20px;
+    background-color: #b884ef;
+  }
+
+  #lista li:hover {
+    background-color: #c291f0;
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formato de Solicitud de Datos</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Opcional si tienes estilos -->
+</head>
+<body>
+  <h1>Formato de Solicitud de Datos</h1>
+
+  <form action="#" method="post">
+    <!-- Nombre -->
+    <p>
+      <label for="nombre">Nombre:</label><br />
+      <input type="text" id="nombre" name="nombre" required>
+    </p>
+
+    <!-- Apellido -->
+    <p>
+      <label for="apellido">Apellido:</label><br />
+      <input type="text" id="apellido" name="apellido" required>
+    </p>
+
+    <!-- Género -->
+    <p>
+      Género:<br />
+      <input type="radio" id="masculino" name="genero" value="masculino" required>
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="femenino" name="genero" value="femenino">
+      <label for="femenino">Femenino</label>
+      <input type="radio" id="otro" name="genero" value="otro">
+      <label for="otro">Otro</label>
+    </p>
+
+    <!-- Edad -->
+    <p>
+      <label for="edad">Edad:</label><br />
+      <input type="number" id="edad" name="edad" min="0" max="120" required>
+    </p>
+
+    <!-- Fecha de Nacimiento -->
+    <p>
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br />
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    </p>
+
+    <!-- Correo Electrónico -->
+    <p>
+      <label for="email">Correo Electrónico:</label><br />
+      <input type="email" id="email" name="email" required>
+    </p>
+
+    <!-- Teléfono -->
+    <p>
+      <label for="telefono">Teléfono:</label><br />
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="10 dígitos" required>
+    </p>
+
+    <!-- Domicilio -->
+    <p>
+      <label for="domicilio">Domicilio:</label><br />
+      <textarea id="domicilio" name="domicilio" rows="4" cols="40" placeholder="Calle, número, colonia, ciudad" required></textarea>
+    </p>
+
+    <!-- Botones -->
+    <p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Borrar</button>
+    </p>
+  </form>
+</body>
+</html>

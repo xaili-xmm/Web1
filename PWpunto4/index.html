@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enlaces Figuras Básicas</title>
+</head>
+<body>
+
+<h2>Mapa de imagen con 4 figuras enlazadas</h2>
+
+<p>
+  <!-- Imagen con mapa -->
+  <img src="figuras.jpeg" usemap="#mapaFiguras" alt="Imagen con figuras básicas: cuadrado, triángulo, círculo y rectángulo" width="800" height="500">
+
+  <map name="mapaFiguras" id="mapaFiguras">
+    <!-- Cuadrado -->
+    <area shape="rect" coords="105,60,205,160" href="https://www.google.com" target="_blank" alt="Cuadrado - Google" title="Ir a Google">
+    
+    <!-- Triángulo -->
+    <area shape="poly" coords="505,50,455,150,555,150" href="https://www.instagram.com" target="_blank" alt="Triángulo - instagram" title="Ir a instagram">
+
+    <!-- Círculo -->
+    <area shape="circle" coords="155,355,55" href="https://www.facebook.com" target="_blank" alt="Círculo - facebook" title="Ir a facebook">
+
+    <!-- Rectángulo -->
+    <area shape="rect" coords="450,310,610,390" href="https://www.wikipedia.org" target="_blank" alt="Estrella - Wikipedia" title="Ir a Wikipedia">
+  </map>
+</p>
+
+</body>
+</html>
